@@ -1,60 +1,85 @@
-/* Basic Styles */
+/* Base Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    background: #f0f8ff;
+    background: #f8f9fa;
 }
 
 nav {
-    background: #333;
+    background: #2c3e50;
     padding: 1rem;
     margin-bottom: 2rem;
+    position: sticky;
+    top: 0;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 25px;
+    font-weight: bold;
 }
 
 nav a:hover {
-    color: #00ff00;
+    color: #1abc9c;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
-/* Cat Section Styles */
-.cat-section {
-    text-align: center;
-    margin: 2rem 0;
-    padding: 20px;
+/* Gallery Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 2rem;
+}
+
+.cat-card {
     background: white;
     border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
-.cat-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.cat-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-.breed-description {
-    font-size: 1.2rem;
-    color: #2c3e50;
-    margin-top: 1rem;
-    font-weight: bold;
+/* Facts Page */
+.facts-list {
+    display: grid;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.fact-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #1abc9c;
 }
 
 footer {
     text-align: center;
     margin-top: 3rem;
-    padding: 1rem;
-    background: #333;
+    padding: 2rem;
+    background: #2c3e50;
     color: white;
+}
+
+h1 {
+    color: #2c3e50;
+    border-bottom: 3px solid #1abc9c;
+    padding-bottom: 10px;
 }
