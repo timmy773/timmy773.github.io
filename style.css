@@ -59,3 +59,21 @@ footer {
     background: #333;
     color: white;
 }
+/* Add this to style.css */
+.cat-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.cat-image {
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.breed-description {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
